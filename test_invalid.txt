@@ -1,0 +1,32 @@
+// Programa con errores semánticos
+
+// Error 1: Variable no declarada
+x = 10;
+
+// Error 2: Tipos incompatibles
+int y;
+y = "Hola";
+
+// Error 3: Redeclaración de variable
+int z;
+float z;  // Error: z ya fue declarada
+
+// Error 4: Operación inválida con tipos
+string mensaje = "Hola";
+int num = 5;
+print(mensaje + num);  // No se puede sumar string con int
+
+// Error 5: Uso de condición no booleana en if
+if (num) {  // Error: la condición debe ser booleana
+    print("Número positivo");
+}
+
+// Error 6: Uso de condición no booleana en while
+while (mensaje) {  // Error: la condición debe ser booleana
+    print("Bucle");
+}
+
+// Error 7: Operadores lógicos con operandos no booleanos
+if (num and mensaje) {  // Error: operandos no booleanos
+    print("Error");
+}

@@ -1,0 +1,43 @@
+// Declaración de variables y asignaciones
+int x = 10;
+float y = 3.14;
+string nombre = "Juan";
+bool activo = true;
+
+// Asignaciones
+x = 20;
+y = x + 2.5;
+nombre = "Pedro";
+activo = false;
+
+// Uso de if-else
+int edad = 18;
+if (edad >= 18) {
+    print("Mayor de edad");
+} else {
+    print("Menor de edad");
+}
+
+// Bucle while
+int contador = 0;
+while (contador < 5) {
+    print(contador);
+    contador = contador + 1;
+}
+
+// Bucle for
+int i = 0;
+for (i = 0; i < 10; i ) {
+    print(i);
+    i = i + 1;
+}
+
+// Expresiones complejas y operadores lógicos
+int a = 5;
+int b = 10;
+bool resultado;
+
+resultado = (a < b) and (a + b == 15);
+if (resultado or (a == b)) {
+    print("Condición cumplida");
+}
