@@ -1,6 +1,8 @@
 // Declaración de variables y asignaciones
 int x = 10;
 float y = 3.14;
+//int y;
+float z;
 string nombre = "Juan";
 bool activo = true;
 
@@ -9,14 +11,16 @@ x = 20;
 y = x + 2.5;
 nombre = "Pedro";
 activo = false;
+z=x+y;
 
 // Uso de if-else
 int edad = 18;
-if (edad >= 18) {
+if (edad >= 18 and  z!= 34) {
     print("Mayor de edad");
 } else {
     print("Menor de edad");
 }
+{ z=(2*4)+4/45-(22+56); }
 
 // Bucle while
 int contador = 0;

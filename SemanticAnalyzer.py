@@ -244,3 +244,14 @@ class TypeChecker:
             return True
 
         return False
+
+    def _check_block(self, node):
+        # Verificar si el bloque está vacío
+        if not node.children:
+            self.errors.append(
+                SemanticError(f"Error: Bloque vacío '{{}}' detectado. Los bloques vacíos no están permitidos."))
+            return
+
+        # Continuar con el análisis normal del bloque
+        for stmt in node.children:
+            self._check_statement(stmt)
